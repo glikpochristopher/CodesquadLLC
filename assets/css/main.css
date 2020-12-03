@@ -3,7 +3,8 @@
 2. Header & Nav styles
 3. Main Body Content
 4. Client Message
-5. Footer Content
+5. Amaze Featured
+6. Footer Content
 *****************************************************/
 
 /*****************************************************
@@ -245,7 +246,38 @@ aside p{
 }
 /*****************************************************
 *****************************************************
-5. Footer Content
+5. Amaze Featured
+*****************************************************
+****************************************************/
+section.amaze-featured {
+    background-color: #292D31;
+    padding: 60px 40px;
+}
+.amaze-featured-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.amaze-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.amaze-header-wrapper h2,.amaze-content h3{
+    color:#fff;
+}
+.amaze-content i{
+    color:#2386EB !important;
+}
+.amaze-inner-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 60px;
+}
+/*****************************************************
+*****************************************************
+6. Footer Content
 *****************************************************
 ****************************************************/
 footer{
