@@ -2,7 +2,8 @@
 1. Universal styles (typography,etc)
 2. Header & Nav styles
 3. Main Body Content
-4. Footer Content
+4. Client Message
+5. Footer Content
 *****************************************************/
 
 /*****************************************************
@@ -220,12 +221,32 @@ aside p{
     text-align: center;
     line-height: 1.5;
 }
+
 /*****************************************************
 *****************************************************
-4. Footer Content
+4. Client Message
+*****************************************************
+****************************************************/
+.clients {
+    padding: 60px 45px;
+    background-color: #F1F3F7;
+}
+.clients-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clients-inner h2{
+    font-weight: bold;
+}
+/*****************************************************
+*****************************************************
+5. Footer Content
 *****************************************************
 ****************************************************/
 footer{
+    border-top:1px solid #ddd;
     padding:1em 0;
     background-color: #F1F3F7;
 }
