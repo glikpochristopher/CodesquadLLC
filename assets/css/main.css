@@ -151,7 +151,7 @@ li.sign-up {
     grid-column:2/-1;
 }
 .txt-type > .txt{
-    border-right:0.2rem solid #777;
+    border-right:0.1rem solid #333;
 }
 .blue{
     color:#AAE7FF;
