@@ -225,15 +225,18 @@ aside p{
 4. Footer Content
 *****************************************************
 ****************************************************/
+footer{
+    padding:1em 0;
+    background-color: #F1F3F7;
+}
 footer a{
     color:#888;
 }
 .icons {
-    margin-top:1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1em;
+
 }
 .icons a{
     padding:1rem;
