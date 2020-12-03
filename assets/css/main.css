@@ -269,11 +269,15 @@ section.amaze-featured {
 }
 .amaze-content i{
     color:#2386EB !important;
+    font-size: 2rem;
 }
 .amaze-inner-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 60px;
+}
+.amaze-content p{
+    padding-left: 2rem;
 }
 /*****************************************************
 *****************************************************
