@@ -29,7 +29,8 @@ body{
 }
 a{
     text-decoration: none;
-    color:#007eff;
+    /* color:#007eff; */
+    color:#fff;
 }
 ul li{
     list-style: none;
@@ -42,14 +43,15 @@ h3{ margin:0 0 0.5em 0; font-size: 1.3em; font-weight: 700;}
 h4{ margin:0 0 1.5em 0; font-size: 1em; font-weight: 700;}
 
 p{margin:0 0 1em 0;}
-a:visited{color: #65b1ff;}
-a:hover{color: #2388ed;}
+/* a:visited{color: #65b1ff;}
+a:hover{color: #2388ed;} */
 /*****************************************************
 *****************************************************
 2. Header & Nav Styles
 *****************************************************
 ****************************************************/
-header{
+.header-container{
+    position: relative;
     height:100vh;
     width:100%;
     background-repeat: no-repeat;
@@ -61,25 +63,64 @@ header{
     z-index: 20;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
-header a.logo{
-    position:absolute;
-    display: block;
-    width:160px;
-    height:66px;
-    top:15px;
-    left:20px;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    background: rgba(0,0,0,0.65);
+    min-height: 104px;
 }
-header div.hero-section {
+
+.header-container div.hero-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color:#fff;
 }
-header div.hero-section h1{
+.header-container div.hero-section h1{
     line-height: 1em;
     margin:0 0 30px 0;
 }
+.header-container .hero-section p{
+    color:#2388ed; 
+    font-size: 1.7em;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+}
+ul a{
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+ul li a:hover{
+    color: #2388ed;
+}
+li.sign-up {
+    margin-left: 21px;
+}
+.sign-up a{
+    background: transparent;
+    border-color: #2388ed;
+    color: #2388ed;
+    border: 2px solid #2388ed;
+    border-radius: 50px;
+    padding: 1rem;
+}
+.sign-up a:hover{
+    border-color: #52a1f1;
+    background-color: #2388ed !important;
+    color: #ffffff;
+}
+.sign-up a:hover span{
+    padding-left: 1px;
+}
+
 /*****************************************************
 *****************************************************
 3. Main Body Content
