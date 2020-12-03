@@ -70,6 +70,10 @@ header{
     padding: 0 2em;
     background: rgba(0,0,0,0.65);
     min-height: 104px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
 }
 
 .header-container div.hero-section {
@@ -221,3 +225,31 @@ aside p{
 4. Footer Content
 *****************************************************
 ****************************************************/
+footer a{
+    color:#888;
+}
+.icons {
+    margin-top:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.icons a{
+    padding:1rem;
+    transition: all 0.3s;
+}
+.icons a:hover{
+    color:#fff;
+    border-radius:50%;
+    background-color: #2388ED;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.links div,.links a{
+    margin-right:1em;
+}
